@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -54,14 +52,15 @@
     border-radius: 20px;
   }
   .text{
-    position: absolute;
+    position: relative;
     width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 64%;
+    top: 90vh;
+    left: .9vw;
   }
   #h1c{
     font-family: Roboto;
@@ -71,5 +70,22 @@
     font-family: Roboto;
     font-size: 12px;
   }
+  @media (min-width:320px){
+  #imgq{
+    width: 50%;
+  }
+  .text {
+    top: 52vh;
+    left: 2.5vw;
+  }
+  #h1c{
+    font-size: 17px;
+  }
+  #p1c{
+    font-size: 10px;
+  }
+  }
+
 </style>
+
 </html>
