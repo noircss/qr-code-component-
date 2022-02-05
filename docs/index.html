@@ -5,24 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | QR code component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">ShahRukh Ahmed</a>.
-  </div>
-</body>
+<main>
 <div class="qr">
   <img src="images/image-qr-code.png" alt="qrcode" id="imgq">
 </div>
@@ -33,6 +17,7 @@
   <div id="p1c">
   <p>Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
 </div>
+</main>
 <style>
   @import url('https://fonts.google.com/specimen/Outfit');
   *{
@@ -51,12 +36,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: center;
     top: 50%;
   }
   #imgq{
     position: absolute;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 20vw;
     text-align: center;
     border-width: 20px 15px 200px 15px;
@@ -66,24 +53,30 @@
     box-shadow: 2px 5px 30px rgb(114, 114, 114, 0.3)
   }
   #h1c{
-    position: absolute;
+    position: relative;
     text-align: center;
-    height: 100vh;
-    top: 62%;
-    left: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    top: 61vh;
+    height: 50%;
     font-family: 'Outfit', sans-serif;
-    font-size: .65vw;
+    font-size: 13px;
     color:hsl(218, 44%, 22%);
     font-weight: 700;
   }
   #p1c{
-    position: absolute;
+    position: relative;
     text-align: center;
-    height: 100vh;
-    top: 69%;
-    left: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin: auto;
+    top: 62vh;
     font-family: 'Outfit', sans-serif;
-    font-size: .75vw;
+    font-size: 15px;
     color:hsl(220, 15%, 55%);
     font-weight:400;
   }
@@ -97,18 +90,22 @@
     width: 75%;
   }
   #h1c{
-    position:absolute;
-    font-size: 2.5vw;
+    position: relative;
     text-align: center;
-    left: 20%;
-    top: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9px;
+    margin: auto;
   }
   #p1c{
-    position:absolute;
-    font-size: 3.2vw;
+    position: relative;
     text-align: center;
-    left: 24%;
-    top: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin: auto;
   }
 }
 @media all and (width: 1440px){
@@ -118,21 +115,26 @@
   }
   #imgq{
     position: absolute;
-    width: 25%;
+    width: 22%;
   }
   #h1c{
-    position:absolute;
-    font-size: .85vw;
+    position: relative;
     text-align: center;
-    left: 39.7%;
-    top: 61%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    margin: auto;
+    padding: 0px 0 10px 0;
   }
   #p1c{
-    position:absolute;
-    font-size: 1vw;
+    position: relative;
     text-align: center;
-    left: 41.9%;
-    top: 69%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin: auto;
   }
 }
 </style>
