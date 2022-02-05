@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | QR code component</title>
 
@@ -26,12 +26,20 @@
 <div class="qr">
   <img src="images/image-qr-code.png" alt="qrcode" id="imgq">
 </div>
-<div class="text">
-  <h1 id="h1c">Scan here to redeem!</h1>
-  <p id="p1c">Scan this QR code to redeem your offer.</p>
+<div id="h1c">
+  <h1>Improve your front-end<br>skills by building projects
+  </h1>
+  </div>
+  <div id="p1c">
+  <p>Scan the QR code to visit Frontend<br>Mentor and take your coding skills to<br>the next level</p>
 </div>
 <style>
   @import url('https://fonts.google.com/specimen/Outfit');
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   html{
     background-color: hsl(212, 45%, 89%);
   }
@@ -39,54 +47,68 @@
     position: absolute;
     width: 100%;
     margin: auto;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 20%;
+    top: 50%;
   }
   #imgq{
-    width: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 20vw;
     text-align: center;
     border-width: 20px 15px 200px 15px;
     border-color: white;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: 20px ;
     box-shadow: 2px 5px 30px rgb(114, 114, 114, 0.3)
   }
-  .text{
-    position: relative;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 60vh;
-    left: .9vw;
-  }
   #h1c{
-    font-family: 'Outfit', sans-serif;
-    font-size: 30px;
-  }
-  #p1c{
-    font-family: 'Outfit', sans-serif;
-    font-size: 12px;
-  }
-  @media screen and (min-width: 350px) and (max-width: 1440px){
-  #imgq{
-    width: 30vh;
-  }
-  .text{
-    position:absolute;
-    top: 55vh;
+    position: absolute;
     text-align: center;
-    justify-content: center;
-  }
-  #h1c{
-    font-size: 17px;
+    height: 100vh;
+    top: 62%;
+    left: 42%;
+    font-family: 'Outfit', sans-serif;
+    font-size: .65vw;
+    color:hsl(218, 44%, 22%);
+    font-weight: 700;
   }
   #p1c{
-    font-size: 10px;
+    position: absolute;
+    text-align: center;
+    height: 100vh;
+    top: 69%;
+    left: 44%;
+    font-family: 'Outfit', sans-serif;
+    font-size: .75vw;
+    color:hsl(220, 15%, 55%);
+    font-weight:400;
+  }
+  @media all and (min-width: 375px) and (max-width: 1440px){
+  .qr{
+    position: absolute;
+    width: 100%;
+  }
+  #imgq{
+    position: absolute;
+    width: 75%;
+  }
+  #h1c{
+    position:absolute;
+    font-size: 2.5vw;
+    text-align: center;
+    left: 20%;
+    top: 58%;
+  }
+  #p1c{
+    position:absolute;
+    font-size: 3.2vw;
+    text-align: center;
+    left: 24.5%;
+    top: 65%;
   }
 }
 </style>
